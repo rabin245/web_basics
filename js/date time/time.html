@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>date and time function</title>
+    <script>
+        function t() {
+            var d = new Date();
+            document.getElementById('demo').innerHTML = d.toDateString();
+            document.getElementById('demo1').innerHTML = d.toLocaleString();
+        }
+        setInterval(t, 1000);
+        // setInterval("t()", 1000);
+    </script>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+</body>
+
+</html>

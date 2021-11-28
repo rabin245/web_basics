@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>background change</title>
+    <style type="text/css" media="screen">
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        function img(abc){
+            document.body.background = abc;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td onmouseover="img('a.jpg')"><img src='a.jpg' height="100px"></td>
+            <td onmouseover="img('b.jpg')"><img src='b.jpg' height="100px"></td>
+            <td onmouseover="img('c.jpg')"><img src='c.jpg' height="100px"></td>
+            <td onmouseover="img('d.png')"><img src='d.png' height="100px"></td>
+            <td onmouseover="img('e.png')"><img src='e.png' height="100px"></td>
+        </tr>
+    </table>
+</body>
+</html>

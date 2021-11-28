@@ -1,0 +1,32 @@
+CREATE DATABASE mbm_ram
+CREATE TABLE tb_persons(
+p_id INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    age INT(5),
+    account_balance FLOAT(10),
+    remarks TEXT,
+    contact VARCHAR(50)
+)
+
+select * from tb_persons
+
+INSERT INTO tb_persons (fname, lname, age, remarks, contact, account_balance)
+VALUES ("Late", "6002", 26, "He is a student of MBM", "1234567", 900.36)
+
+SELECT fname FROM tb_persons
+
+select fname, lname, age, account_balance, remarks, contact 
+from tb_persons WHERE p_id=3
+
+UPDATE `tb_persons` SET fname = "Sita"
+WHERE lname = "602"
+
+UPDATE tb_persons SET `fname`='Hari',`lname`='Puri',`age`='22',`account_balance`='2000',`remarks`='He workd during the weekends.',`contact`='342469' 
+WHERE p_id = 3
+
+DELETE FROM `tb_persons` 
+WHERE p_id = 3
+
+DROP TABLE tb_persons
+DROP DATABASE mbm_ram

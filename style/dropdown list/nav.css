@@ -1,0 +1,45 @@
+*{
+    margin: 0px auto;
+    padding: 0xp;
+}
+.body{
+    background-image: url("a.jpg");
+    background-size: contain;
+}
+.navigation{
+    height: 50px;
+    width: 900px;
+    background-color: black;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation li{
+    float: left;
+    line-height: 50px;
+    position:relative;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+.navigation a:hover{
+    background-color: red;
+    border: 2px solid yellow;
+}
+
+.navigation ul ul{
+    visibility: hidden;
+    position: absolute;
+}
+.navigation ul li:hover li{
+    visibility: visible;
+    background-color: violet;
+    opacity: 0.5;
+}

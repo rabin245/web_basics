@@ -1,0 +1,78 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+.main{
+    height: 1500px;
+    width: 1500px;
+    background-color: gray;
+}
+.header{
+    height: 300px;
+    background-color: blue;
+}
+.content1{
+    height: 300px;
+    background-color: white;
+}
+.a{
+    background-color: green;
+    height: 300px;
+    width: 750px;
+    float: left;
+}
+.b{
+    background-color: red;
+    height: 300px;
+    width: 750px;
+    float: right;
+}
+.content2{
+    height: 300px;
+}
+.c{
+    background-color: yellow;
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+.d{
+    background-color: orange;
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+.e{
+    background-color: crimson;
+    height: 300px;
+    width: 500px;
+    float: right;
+}
+.content3{
+    height: 300px;
+    background-color: white;
+}
+.f{
+    background-color: yellow;
+    height: 300px;
+    width: 380px;
+    float: left;
+}
+.g{
+    background-color: orange;
+    height: 300px;
+    width: 380px;
+    float: left;
+}
+.h{
+    background-color: crimson;
+    height: 300px;
+    width: 380px;
+    float: left;
+}
+.i{
+    background-color: green;
+    height: 300px;
+    width: 200px;
+    float: right;
+}

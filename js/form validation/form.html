@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script src="validation.js"></script>
+    <style>
+        input{
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <span>Name:</span>
+        <input type="text" id="uname" placeholder="Enter name" autofocus onkeyup="valname()">
+        <span id="errname"></span>
+        <br><br>
+        <span>Phone number:</span>
+        <input type="text" id="pnum" placeholder="Enter phone number" onkeyup="valphone()">
+        <span id="errphone"></span>
+        <br><br>
+        <span>Gender:</span>
+        <input type="radio" name="gender" id="gender" value="male">male
+        <input type="radio" name="gender" id="gender" value="female" >female
+        <input type="radio" name="gender" id="gender" value="others" >others
+        <br><br>
+        <span>Email:</span>
+        <input type="text" id="email" placeholder="Enter your mail" onkeyup="valmail()">
+        <span id="errmail"></span>
+        <br><br>
+        <span>Password:</span>
+        <input type="text" id="password" placeholder="" onkeyup="valPassword()">
+        <span id="errpassword"></span>
+        <br><br>
+    </form>
+</body>
+
+</html>

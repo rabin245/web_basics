@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <script src="validation1.js"></script>
+</head>
+<body>
+    <textarea id="comment" placeholder="enter your comment here" onkeyup="validcom()"></textarea>
+    <br><span id="errcomment">minimum 40 characters</span>
+    <br><br>
+    <input type="radio" name="one" id="radio" onchange="validRadio()">agree <br>
+    <input type="radio" name="one" id="radio" onchange="validRadio()">disagree <br>
+    <span id="errradio"></span>
+</body>
+</html>

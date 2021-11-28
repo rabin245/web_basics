@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>js functions</title>
+    
+    <script>
+        function change() {
+            document.getElementById('abc').innerHTML = "F is for Femly!!";
+        }
+        function fontsize() {
+            var a = 80;
+            abc.style.fontSize = `${a}px`;
+            // document.getElementById('abc').style.fontSize = a;
+        }
+    </script>
+</head>
+
+
+<body>
+    <p id="abc">Hello world</p>
+    <button onclick="change()">change text</button>
+    <button onclick="fontsize()">change text size</button>
+</body>
+
+</html>

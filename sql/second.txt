@@ -1,0 +1,28 @@
+CREATE TABLE february(
+	order_id INT PRIMARY KEY AUTO_INCREMENT,
+    o_name VARCHAR(255),
+    o_rate INT(5),
+    o_qty INT(5)
+);
+
+INSERT INTO `february` (o_name, o_rate, o_qty) VALUES 
+('books','500','25'),('notes','50','100'),('pens','30','1000');
+
+ALTER TABLE february
+ADD remarks varchar(255);
+
+UPDATE `february` 
+SET remarks = 'not received'
+WHERE order_id=4;
+
+ALTER TABLE february
+CHANGE o_rate  o_rate varchar(50);
+
+ALTER TABLE february
+RENAME  february_orders;
+ALTER TABLE february_orders
+RENAME TO february_orders1;
+
+ALTER TABLE `february_orders1` CHANGE `order_id` `o_id` INT(11) NOT NULL AUTO_INCREMENT;
+alter TABLE february_orders1
+CHANGE remarks rem varchar(255);

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY basic effects</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('.main').hide(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <center>
+        <button id="hide">hide</button>
+        <div class="main" style="background-color: black;height: 300px; width: 500px;"></div>
+    </center>
+</body>
+
+</html>

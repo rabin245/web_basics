@@ -1,0 +1,33 @@
+.main{
+    height: 1000px;
+    width: 900px;
+    background-color: gray;
+}
+.header{
+    height: 200px;
+    background-color: red;
+}
+.main .header h1{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+    line-height: 200px;
+}
+.content {
+    height: 600px;
+    background-color: green;
+}
+.content p{
+    padding: 2px;
+    font-size: 20px;
+    color: white;
+}
+.footer{
+    height: 200px;
+    background-color: blue;
+}
+.footer h2{
+    padding: 2px;
+    text-align: center;
+    line-height: 200px;
+}

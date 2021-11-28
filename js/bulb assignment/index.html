@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb js func</title>
+    <script>
+        function turn_light(state){
+            var bulb_img;
+            if (state==1){
+                bulb_img='pic_bulbon.gif';
+            } else {
+                bulb_img='pic_bulboff.gif';
+            }
+            document.getElementById('bulb').src=bulb_img;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <img id="bulb" src="pic_bulboff.gif">
+        <br>
+        <button onclick="turn_light(1)">Turn on</button>
+        &nbsp;&nbsp;&nbsp;
+        <button onclick="turn_light(0)">Turn off</button>
+    </center>
+</body>
+
+</html>

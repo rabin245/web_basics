@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <form>
+        <p>User name:<br>
+            <input type="text" id="uname" autofocus onkeyup="validname()">
+            <span id="errorname"></span>
+        </p>
+        <p>Password:<br>
+            <input type="password" id="upass" onkeyup="validpass()">
+            <span id="errorpass"></span>
+        </p>
+
+        <p>email:<br>
+            <input type="email" placeholder="e.g. abc123@gmail.com" id="uemail" onkeyup="validemail()">
+            <span id="errmail"></span>
+        </p>
+
+        <p>Phone number:<br>
+            <input type="text" id="uphone" onkeyup="validphone()">
+            <span id="errphone"></span>
+        </p>
+
+        <p>
+            <input type="radio" name='one' id="radio" value="agree" onchange="validradio()">agree<br>
+            <input type="radio" name='one' id="radio" value="disagree" onchange="validradio()">disagree
+            <span id="errradio"></span>
+        </p>
+        <p>
+            <textarea name="comment" id="comment" onkeyup="validcomment()"></textarea>
+            <span id="errorcmnt">forty characters required</span>
+        </p>
+        <p>
+            <input type="submit" id="usubmit" value="submit" >
+            <input type="reset" id="ureset" value="reset" >
+        </p>
+    </form>
+
+</body>
+
+</html>

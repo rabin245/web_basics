@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>js background change</title>
+    <script>
+        function bgchange(sample) {
+            document.body.bgColor = sample;
+        }
+        function textchange() {
+            t = prompt('Enter the text color')
+            document.body.text = t
+        }
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat expedita, iusto esse quae libero natus quasi
+        velit? Enim eligendi amet, fugiat, perspiciatis asperiores repellat, quam nesciunt rem dolore veritatis
+        sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est expedita molestiae vitae consequuntur
+        dolor unde, culpa iure aut suscipit officiis! Nostrum repellendus magni cum recusandae quia inventore voluptatem
+        quidem ipsum.</p>
+    <button onclick="bgchange('red')">red</button>
+    <button onclick="bgchange('blue')">blue</button>
+    <button onclick="bgchange('green')">green</button>
+    <button onclick="bgchange('yellow')">yellow</button>
+    <button onclick="bgchange('purple')">purple</button>
+    <button onclick="bgchange('black')">black</button>
+    <button onclick="textchange()">change text color</button>
+</body>
+
+</html>

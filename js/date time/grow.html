@@ -1,0 +1,33 @@
+
+<html lang="en">
+<title>text grow and shrink</title>
+<script>
+    var size = 10;
+    var flag = true;
+    function grow() {
+        if (size <= 100 && flag) {
+            abc.style.fontSize = size;
+            abc.style.color = "green";
+            size += 4;
+            if (size > 100)
+                flag = false;
+        }
+        else if (size >= 10 && !flag) {
+            abc.style.fontSize = size;
+            abc.style.color = "red";
+            size -= 4;
+            if (size <= 10)
+                flag = true;
+        }
+    }
+    setInterval("grow()", 50);
+</script>
+</head>
+
+<body>
+    <span id="abc">
+        <center>Femly</center>
+    </span>
+</body>
+
+</html>
