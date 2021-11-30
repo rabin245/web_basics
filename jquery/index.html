@@ -10,7 +10,37 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#hide').click(function(){
-                $('.main').hide(3000);
+                $('.main').hide(1000);
+            });
+            $('#show').click(function(){
+                $('.main').show(1000);
+            });
+            $('#toggle').click(function(){
+                $('.main').toggle();
+            });
+            $('#fadeout').click(function(){
+                $('.main').fadeOut(1000);
+            });
+            $('#fadein').click(function(){
+                $('.main').fadeIn(1000);
+            });
+            $('#fadetoggle').click(function(){
+                $('.main').fadeToggle(1000);
+            });
+            $('#slidedown').click(function(){
+                $('.main').slideDown(1000);
+            });
+            $('#slideup').click(function(){
+                $('.main').slideUp(1000);
+            });
+            $('#slidetoggle').click(function(){
+                $('.main').slideToggle(1000);
+            });
+            $('#append').click(function(){
+                $('ol').append('<li>mango</li>');
+            });
+            $('#prepend').click(function(){
+                $('ol').prepend('<li>cat</li>');
             });
         });
     </script>
@@ -19,7 +49,20 @@
 <body>
     <center>
         <button id="hide">hide</button>
+        <button id="show">show</button>
+        <button id="toggle">toggle</button>
+        <button id="fadeout">fadeout</button>
+        <button id="fadein">fadein</button>
+        <button id="fadetoggle">fadetoggle</button>
+        <button id="slideup">slide up</button>
+        <button id="slidedown">slide down</button>
+        <button id="slidetoggle">slide toggle</button>
         <div class="main" style="background-color: black;height: 300px; width: 500px;"></div>
+        <ol>
+            <li>apple</li>
+        </ol>
+        <button id="append">append</button>
+        <button id="prepend">prepend</button>
     </center>
 </body>
 
