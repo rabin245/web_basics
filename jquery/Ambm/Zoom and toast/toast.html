@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery.toast.min.css">
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="jquery.toast.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.toast({
+                text: 'this is a demo of toast message',
+                heading: 'this is heading for the toast message',
+                icon: 'success',
+                position: 'top-left',
+                hideAfter: 5000,
+            })
+        });
+        $(document).ready(function () {
+            $.toast({
+                text: 'this is second demo of toast message',
+                heading: 'this is heading for the second toast message',
+                icon: 'error',
+                hideAfter: 7000,
+            })
+        });
+        $(document).ready(function () {
+            $.toast({
+                text: 'this is third demo of toast message',
+                heading: 'this is heading for the third toast message',
+                icon: 'warning',
+                hideAfter: 10000,
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
