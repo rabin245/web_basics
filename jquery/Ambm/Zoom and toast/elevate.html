@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="a.jpg" id="elevate-image1" data-zoom-image="a.jpg" height="300px" width="300px"><br>
+    <img src="b.jpg" id="elevate-image2" data-zoom-image="b.jpg" height="300px" width="300px"><br>
+    <img src="c.png" id="elevate-image3" data-zoom-image="c.png" height="300px" width="300px"><br>
+    <img src="e.png" id="elevate-image4" data-zoom-image="e.png" height="300px" width="300px"><br>
+    <img src="f.png" id="elevate-image5" data-zoom-image="f.png" height="300px" width="300px"><br>
+    <img src="d.jfif" id="elevate-image6" data-zoom-image="d.jfif" height="300px" width="300px"><br>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.elevateZoom-3.0.8.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#elevate-image1').elevateZoom({
+                tint: true,
+                tintColour: '#F90',
+                tintOpacity: 0.5,
+                zoomWindowFadeIn: 1000,
+                zoomWindowFadeOut: 1000,
+                zoomWindowHeight: 500,
+                zoomWindowWidth: 500,
+            });
+            $('#elevate-image2').elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+            });
+            $('#elevate-image3').elevateZoom({
+                tint: true,
+                tintColour: '#F90',
+                tintOpacity: 0.5,
+            });
+            $('#elevate-image4').elevateZoom({
+                zoomType: "lens",
+                lensShape: "round",
+                lensSize: 200,
+            });
+            $('#elevate-image5').elevateZoom({
+                tint: true,
+                tintColour: '#F90',
+                tintOpacity: 0.5,
+                zoomWindowFadeIn: 1000,
+                zoomWindowFadeOut: 1000,
+                zoomWindowHeight: 500,
+                zoomWindowWidth: 700,
+            });
+            $('#elevate-image6').elevateZoom({
+                tint: true,
+                tintColour: '#F90',
+                tintOpacity: 0.5,
+                zoomWindowFadeIn: 1000,
+                zoomWindowFadeOut: 1000,
+                zoomWindowHeight: 1400,
+                zoomWindowWidth: 1400,
+            });
+        });
+    </script>
+</body>
+
+</html>
